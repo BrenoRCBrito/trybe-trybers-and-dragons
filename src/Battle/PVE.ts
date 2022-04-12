@@ -15,13 +15,13 @@ export default class PVE extends Battle {
     this.monsters = monsters;
   }
 
-  managePlayerTurn(){
+  managePlayerTurn() {
     this.monsters[0].receiveDamage(this.player1.strength);
-      if (this.monsters[0].lifePoints === -1) this.monsters.shift();
-      if (this.monsters.length === 0) return 1;
+    if (this.monsters[0].lifePoints === -1) this.monsters.shift();
+    if (this.monsters.length === 0) return 1;
   }
 
-  manageMonsterTurn(monstersStrength : number[]){
+  manageMonsterTurn(monstersStrength : number[]) {
     this.player1.receiveDamage(monstersStrength
       .reduce((acc, strengthValue) => acc + strengthValue, 0));
     if (this.player1.lifePoints === -1) return -1;
