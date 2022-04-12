@@ -6,9 +6,8 @@ export default class Warrior extends Archetype {
   private static _instancesCount: number;
   constructor(name: string) {
     super(name);
-    Warrior._instancesCount =
-      Warrior._instancesCount === undefined ? 
-      1 : Warrior._instancesCount + 1;
+    Warrior._instancesCount = Warrior._instancesCount === undefined 
+        ? 1 : Warrior._instancesCount + 1;
     this._energyType = 'stamina';
   }
 

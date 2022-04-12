@@ -6,8 +6,8 @@ export default class Mage extends Archetype {
   private static _instancesCount: number;
   constructor(name: string) {
     super(name);
-    Mage._instancesCount = Mage._instancesCount === undefined ? 
-    1 : Mage._instancesCount + 1;
+    Mage._instancesCount = Mage._instancesCount === undefined 
+      ? 1 : Mage._instancesCount + 1;
     this._energyType = 'mana';
   }
 
