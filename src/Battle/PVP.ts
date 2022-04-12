@@ -16,8 +16,6 @@ export default class PVP extends Battle {
 
   fight(): number {
     for (;;) {
-      console.log(this.player1);
-      console.log(this.player2);
       this.player2.receiveDamage(this.player1.strength);
       if (this.player2.lifePoints === -1) return 1;
       this.player1.receiveDamage(this.player2.strength);
