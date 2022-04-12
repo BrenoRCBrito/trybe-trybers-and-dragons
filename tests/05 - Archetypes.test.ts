@@ -20,7 +20,9 @@ describe('05 - Classes que herdam de Archetype', () => {
   });
 
   it('O método createdArchetypeInstances deve retornar o número correto de instâncias criadas da classe Necromancer', () => {
-    expect('Necromancer.createdArchetypeInstances').toCompileAndBeEqualTo([1, 2, 3]);
+    expect('Necromancer.createdArchetypeInstances').toCompileAndBeEqualTo([
+      1, 2, 3,
+    ]);
   });
 
   it('A classe Necromancer existe', () => {
@@ -60,7 +62,9 @@ describe('05 - Classes que herdam de Archetype', () => {
   });
 
   it('O método createdArchetypeInstances deve retornar o número correto de instâncias criadas da classe Warrior', () => {
-    expect('Warrior.createdArchetypeInstances').toCompileAndBeEqualTo([1, 2, 3]);
+    expect('Warrior.createdArchetypeInstances').toCompileAndBeEqualTo([
+      1, 2, 3,
+    ]);
   });
 
   it('A classe Warrior existe', () => {

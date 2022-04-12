@@ -1,4 +1,4 @@
-const itIf = (condition: boolean) => condition ? it : it.skip;
+const itIf = (condition: boolean) => (condition ? it : it.skip);
 
 describe('06 - Interface Fighter', () => {
   it('A interface Fighter existe', () => {
