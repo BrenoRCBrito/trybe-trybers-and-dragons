@@ -6,8 +6,7 @@ export default class Necromancer extends Archetype {
   private static _instancesCount: number;
   constructor(name: string) {
     super(name);
-    Necromancer._instancesCount =
-      Necromancer._instancesCount === undefined
+    Necromancer._instancesCount = Necromancer._instancesCount === undefined
         ? 1
         : Necromancer._instancesCount + 1;
     this._energyType = 'mana';

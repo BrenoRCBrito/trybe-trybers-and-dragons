@@ -6,8 +6,8 @@ export default class Orc extends Race {
 
   constructor(name: string, dexterity: number) {
     super(name, dexterity);
-    Orc._instancesCount =
-      Orc._instancesCount === undefined ? 1 : Orc._instancesCount + 1;
+    Orc._instancesCount = Orc._instancesCount === undefined ? 
+    1 : Orc._instancesCount + 1;
     this._maxLifePoints = 74;
   }
 

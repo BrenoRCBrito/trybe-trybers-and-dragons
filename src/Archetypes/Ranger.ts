@@ -6,8 +6,8 @@ export default class Ranger extends Archetype {
   private static _instancesCount: number;
   constructor(name: string) {
     super(name);
-    Ranger._instancesCount =
-      Ranger._instancesCount === undefined ? 1 : Ranger._instancesCount + 1;
+    Ranger._instancesCount = Ranger._instancesCount === undefined ? 
+    1 : Ranger._instancesCount + 1;
     this._energyType = 'stamina';
   }
 
