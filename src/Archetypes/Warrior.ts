@@ -7,7 +7,7 @@ export default class Warrior extends Archetype {
   constructor(name: string) {
     super(name);
     Warrior._instancesCount = Warrior._instancesCount === undefined 
-        ? 1 : Warrior._instancesCount + 1;
+      ? 1 : Warrior._instancesCount + 1;
     this._energyType = 'stamina';
   }
 
